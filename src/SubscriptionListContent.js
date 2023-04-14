@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab } from "semantic-ui-react";
+import { Loader, Tab } from "semantic-ui-react";
 import SubscriptionListTable from "./SubscriptionListTable";
 import { useFetchSubscriptionList } from "./useFetchSubscriptionList";
 
@@ -22,7 +22,7 @@ export default function SubscriptionListContent() {
         <Tab.Pane>
           <SubscriptionListTable filter="ACTIVE" />
         </Tab.Pane>
-      )
+      ),
     },
     {
       menuItem: "Inactive",
@@ -30,8 +30,8 @@ export default function SubscriptionListContent() {
         <Tab.Pane>
           <SubscriptionListTable filter="INACTIVE" />
         </Tab.Pane>
-      )
-    }
+      ),
+    },
   ];
 
   return (
